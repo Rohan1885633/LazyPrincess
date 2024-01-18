@@ -96,7 +96,7 @@ PORT = int(environ.get('PORT', 8080))
 NO_PORT = bool(environ.get('NO_PORT', False))
 APP_NAME = None
 if 'DYNO' in environ:
-    ON_HEROKU = True
+    ON_HEROKU = False
     APP_NAME = environ.get('APP_NAME')
 else:
     ON_HEROKU = False
@@ -153,7 +153,7 @@ DOWNLOAD_TEXT_URL = "https://t.me/The_Movies_Officially/653"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/LazyDeveloper"
+CAPTION_BUTTON_URL = "https://t.me/The_Movies_Officially"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
