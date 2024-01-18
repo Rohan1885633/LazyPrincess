@@ -82,7 +82,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','')  # WITHOUT @ [  add only handl
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "The_MoviesRequest") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False)
+URL_MODE = is_enabled((environ.get("URL_MODE","True")), True)
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'ziplinker.net') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', 'cc40becc32e5b8f5c78bae3bf9db34bbf8336740')
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
@@ -149,7 +149,7 @@ if SELF_DELETE == "True":
 
 # Download Tutorial Button #
 DOWNLOAD_TEXT_NAME = "📥 HOW TO DOWNLOAD 📥"
-DOWNLOAD_TEXT_URL = "https://t.me/LazyDeveloper"
+DOWNLOAD_TEXT_URL = "https://t.me/The_Movies_Officially/653"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
