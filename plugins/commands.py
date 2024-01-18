@@ -72,16 +72,11 @@ async def start(client, message):
         except ChatAdminRequired:
             logger.error("Hey Sona, Ek dfa check kr lo ki main Channel mei Add hu ya nhi...!")
             return
-        btn = [
-            [
+        btn = [[
                 InlineKeyboardButton(
                     "🤖 Join Updates Channel", url=invite_link.invite_link
                 )
-            ],
-           
-                )
-            ]
-        ]
+            ]]
 
         if message.command[1] != "subscribe":
             try:
@@ -232,7 +227,6 @@ async def start(client, message):
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
-                reply_markup=keyboard,
                 protect_content=True if pre == 'filep' else False,
                 )
             filetype = msg.media
@@ -270,7 +264,6 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
-        reply_markup=keyboard,  # Use the created keyboard
         protect_content=True if pre == 'filep' else False,
         )
 
