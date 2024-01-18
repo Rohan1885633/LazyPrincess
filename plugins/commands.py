@@ -55,8 +55,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('🔗 More Help', callback_data='leech_url_help'),
             InlineKeyboardButton('⚙ Open Settings', callback_data='openSettings'),
-            ],[
-            InlineKeyboardButton('⪦ Learn BOT Making ⪧', url='https://youtube.com/@Lazydeveloperr')
             ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -104,10 +102,7 @@ async def start(client, message):
         ],[
             InlineKeyboardButton('🔗 More Help ', callback_data='leech_url_help'),
             InlineKeyboardButton('⚙ Open Settings ', callback_data='openSettings'),
-            ],
-        [
-            InlineKeyboardButton('⪦ Learn BOT Making ⪧', url='https://youtube.com/@Lazydeveloperr')
-        ]]
+            ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
