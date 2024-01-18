@@ -78,9 +78,7 @@ async def start(client, message):
                     "🤖 Join Updates Channel", url=invite_link.invite_link
                 )
             ],
-             [
-                InlineKeyboardButton(
-                    "🦋 SUBSCRIBE YT Channel 🦋", '
+           
                 )
             ]
         ]
